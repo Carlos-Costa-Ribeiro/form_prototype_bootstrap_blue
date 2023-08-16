@@ -20,8 +20,30 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body>
-    
+<body class="container-fluid d-flex"
+    style="height: 100vh; background-image: url(./assets/img/dragon-scales.svg); background-position: center;">
+    <div class="container bg-white align-self-center d-flex justify-content-center" style="height:60rem; max-width: 50rem; border-radius: 3rem;">
+        <form action="" class="p-5 d-flex flex-column text-center align-self-center" style="font-size: 2rem;">
+            <h2 class="mb-5 display-2">Registre-se</h2>
+            <div class="mb-5">
+                <label class="form-label mb-3" for="name">Nome completo:</label class="form-label">
+                <input class="form-control p-3 is-valid"  type="text" name="name" placeholder="Digite seu nome ..." id="name">
+            </div>
+            <div class="mb-5">
+                <label class="form-label mb-3" for="email">E-mail:</label class="form-label">
+                <input class="form-control p-3 is-invalid" type="email" name="email" placeholder="Digite seu email ..." id="email">
+            </div>
+            <div class="mb-5">
+                <label class="form-label mb-3" for="password">Senha:</label class="form-label">
+                <input class="form-control p-3 is-valid" type="password" name="pass" placeholder="Digite sua senha ..." id="password">
+            </div>
+            <div class="my-5 form-check">
+                <input  class="form-check-label" type="checkbox" name="check" id="ter">
+                <label for="ter">Eu li e concordo com termos de uso.</label class="form-check-input">
+            </div>
+            <input type="submit" class="bg-primary w-50 mx-auto p-3 border-0 text-white" style="border-radius: 1rem;" value="Criar conta">
+        </form>
+    </div>
 </body>
 
 </html>
